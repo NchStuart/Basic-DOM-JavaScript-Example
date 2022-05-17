@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    flex-direction: column;
+    background-color: #eee;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.balloon-one{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+.imagem-area{
+    display: flex;
+}
+
+.imagem-inicial{
+    height: 400px;
+    margin-left:20px;
+    margin-right: 100px;
+}
+
+.imagem-secundaria{
+    display: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.balloon-two{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+
+.button-area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.type-image-area{
+    margin-bottom: 30px;
+}
+
+.button__type{
+    height: 50px;
+    width: 100px;
+    margin-right: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button__type:hover{
+    background-color: #ccc;
+    transition: 0.5s;
+}
+
+.button__info{
+    height: 50px;
+    width: 100px;
+    margin-right: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button__info:hover{
+    background-color: #ccc;
+    transition: 0.5s;
+}
+
+.button__info:nth-child(n + 1){
+    width: 250px;
+}
+
+.button__info:nth-child(2){
+    margin-right: 0px;
+}
+
+.button__scroll{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 999;
+    right: 40px;
+    bottom: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button__scroll:hover{
+    background-color: #fff;
+    transition: 0.5s;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PRATICA FINAL DOM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="balloon-one">
+            <p class="text-info-01">A especie atual é de um humano</p>
+        </div>
+        <div class="imagem-area">
+            <img class="imagem-inicial" src="images/pessoa.png" data-especie="Humano" alt="Imagem de um humano">
+            <img class="imagem-secundaria" src="images/cachorro.png" data-especie="Cachorro" alt="Imagem de um cachorro">
+        </div>
+        <div class="balloon-two">
+            <p class="text-info-02">Esse humano se chama Cleber e possui 27 anos de idade.</p>
+        </div>
+
+    </div>
+
+    <div class="button-area">
+        <div class="type-image-area">
+            <button class="button__type" onclick="changeImage('pessoa.png', 'Humano', 'Imagem de um humano')">Humano</button>
+            <button class="button__type" onclick="changeImage('cachorro.png', 'Cachorro', 'Imagem de um cachorro')">Cachorro</button>
+        </div>
+        <div class="info-area">
+            <button class="button__info" onclick="changeInfo()">Informações sobre a especie</button>
+            <button class="button__info" onclick="setImage('pessoa.png', 'Humano', 'Imagem de um humano')">Quero ver todas as especies do site</button>
+        </div>
+    </div>
+
+    <button class="button__scroll" onclick="scrollAction()">^</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
